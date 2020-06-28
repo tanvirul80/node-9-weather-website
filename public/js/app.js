@@ -2,7 +2,7 @@ async function getForecast (address) {
 
     document.querySelector('.weatherInfo').innerHTML = '<p>Loading...</p>';
 
-    const response = await fetch(`http://192.168.68.113:3000/weather?address=${address}`);
+    const response = await fetch(`/weather?address=${address}`);
 
     const data = await response.json();
 
